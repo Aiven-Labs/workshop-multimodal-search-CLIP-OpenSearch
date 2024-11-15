@@ -24,6 +24,7 @@ pip install git+https://github.com/openai/CLIP.git
 pip install ftfy regex tqdm
 pip install Pillow   
 pip install torch
+
 ```
 
 ### Step 4. Set OpenSearch credentials
