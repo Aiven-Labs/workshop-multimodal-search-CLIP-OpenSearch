@@ -4,7 +4,7 @@
 
 ### Step 1. Set up OpenSearch service with Aiven
 
-Register at [https://go.aiven.io/signup-opensearch-clip](https://go.aiven.io/signup-opensearch-clip) to host your OpenSearch service and get $400 credits for other services.
+Register at [https://go.aiven.io/signup-opensearchclip](https://go.aiven.io/signup-opensearchclip) to host your OpenSearch service and get $300 credits for 30 days for other services.
 
 ### Step 2. Set up Codespaces
 Press the button to open this repository in GitHub Codespaces:
