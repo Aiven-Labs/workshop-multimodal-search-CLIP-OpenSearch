@@ -9,7 +9,7 @@ Register at [https://go.aiven.io/signup-opensearchclip](https://go.aiven.io/sign
 ### Step 2. Set up Codespaces
 Press the button to open this repository in GitHub Codespaces:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](TODO)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Aiven-Labs/workshop-multimodal-search-CLIP-OpenSearch/)
 
 Or, if you prefer to do it manually: at the top of this GitHub page, above the file browser, select the <> Code button, choose the Codespaces tab and choose Create codespace on main. This will start up a new Codespaces environment.
 
