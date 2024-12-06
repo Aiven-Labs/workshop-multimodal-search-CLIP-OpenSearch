@@ -1,28 +1,27 @@
-# Workshop: Searching for images with vector search - OpenSearch and CLIP model
+# Workshop: Searching for images with vector search - OpenSearch® and CLIP model
 
 ## Part 1. Prepare working environment
 
-### Step 1. Set up OpenSearch service with Aiven
+### Step 1. Set up an Aiven for OpenSearch® service
 
-Register at [https://go.aiven.io/signup-opensearchclip](https://go.aiven.io/signup-opensearchclip) to host your OpenSearch service and get $300 credits for 30 days for other services.
+Register at [https://go.aiven.io/signup-opensearchclip](https://go.aiven.io/signup-opensearchclip) to host your OpenSearch service and get $300 credits for 30 days for all Aiven services.
 
 ### Step 2. Set up Codespaces
 Press the button to open this repository in GitHub Codespaces:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/Aiven-Labs/workshop-multimodal-search-CLIP-OpenSearch)
 
-Or, if you prefer to do it manually: at the top of this GitHub page, above the file browser, select the <> Code button, choose the Codespaces tab and choose Create codespace on main. This will start up a new Codespaces environment.
+Or, if you prefer to do it manually: at the top of this GitHub page, above the file browser, select the **<> Code** button, choose the Codespaces tab and choose **Create codespace on main**. This will start up a new Codespaces environment.
 
-### Step 3. Install Python libraries
-We'll need python libraries to operate OpenSearch, run the model and work with credentials.
-Install them by running
-
+This will use your GitHub credentials to start a new Codespaces environment. The defaults should be acceptable.
+Once it's going, it will start a VSCode environment, showing this repository, and will automatically run
 ```
 pip install -r requirements.txt
 ```
+for you to install the Python packages we need.
 
-### Step 4. Set OpenSearch credentials
-To connect to OpenSearch cluster we'll use the URI of your cluster. 
+### Step 3. Set OpenSearch credentials
+To connect to our OpenSearch cluster we'll use the URI of your cluster. 
 
 1. Grab the service URI from the service page of your Aiven for OpenSearch.
 2. Copu `.env.examples` and rename it to `.env`.
@@ -44,7 +43,7 @@ You should see the response
 {'acknowledged': True, 'shards_acknowledged': True, 'index': 'photos'}
 ```
 
-Also a newly added index will appear in the list of indexes in the service page of your Aiven for OpenSearch service.
+Also a newly added index will appear in the list of indexes in the **Indexes** tab of the service Overview page of your Aiven for OpenSearch service.
 
 ## Part 3. Process each image and upload the vectors to OpenSearch
 
@@ -52,10 +51,22 @@ In this step we'll load the CLIP model, compute feature vectors for a batch of i
 
 Go to [2-process-and-upload.ipynb](2-process-and-upload.ipynb) and run the notebook steps one by one. The last step will take several minutes to iterate over the photos.
 
+**The following OpenSearch walkthrough still needs double checking**
+
 We can use the OpenSearch dashboard to see the contents of the index:
-1. ..
-2. ..
-3. ..
+1. In the service Overview for the Aiven for OpenSearch service, choose the **OpenSearch Dashboards** tab
+2. Copy the **Password** to your clipboard
+3. Open the OpenSearch Dashboards URI, login as user `avnadmin` with the copied password
+4. If asked, choose "Explore on my own"
+5. The Private tenant choice is OK
+6. Using the three-lines menu at the top left, choose **Discover**
+7. Choose "Create index pattern" and then **Use default data source** and "Next step"
+8. It should suggest `photos` as an available index - put `photos` into the **index pattern name** field, and "Next step"
+9. **Create index pattern**
+
+The next page should show the fields in the `photos` index, including `image_url` and `embedding`.
+
+From the 3 lines menu, choose **Discover** and it should show `photos` selected. After a moment it should show the `_source` entries for the index - all the index entries.
 
 ## Part 4. Search for images
 
