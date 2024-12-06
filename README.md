@@ -51,9 +51,9 @@ In this step we'll load the CLIP model, compute feature vectors for a batch of i
 
 Go to [2-process-and-upload.ipynb](2-process-and-upload.ipynb) and run the notebook steps one by one. The last step will take several minutes to iterate over the photos.
 
-**The following OpenSearch walkthrough still needs double checking**
+### Look at the index with the OpenSearch Dashboard
 
-We can use the OpenSearch dashboard to see the contents of the index:
+We can use the OpenSearch Dashboard to see the contents of the index:
 1. In the service Overview for the Aiven for OpenSearch service, choose the **OpenSearch Dashboards** tab
 2. Copy the **Password** to your clipboard
 3. Open the OpenSearch Dashboards URI, login as user `avnadmin` with the copied password
