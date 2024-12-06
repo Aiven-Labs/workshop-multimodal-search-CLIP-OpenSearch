@@ -64,7 +64,7 @@ We can use the OpenSearch dashboard to see the contents of the index:
 
 The next page should show the fields in the `photos` index, including `image_url` and `embedding`.
 
-From the 3 lines menu, choose **Discover** and it should show `photos` selected. After a moment it should show the `_source` entries for the index - all the index entries.
+From the three lines menu, choose **Discover** and it should show `photos` selected. After a moment it should show the `_source` entries for the index - all the index entries.
 
 ## Part 4. Search for images
 
