@@ -68,4 +68,14 @@ Time to search for an image by providing a text description. For this we'll do t
 Go to [3-run-vector-search.ipynb](3-run-vector-search.ipynb) and run the notebook steps one by one. 
 Change the value of ``text_input`` to search for different images.
 
- 
+## Interesting links
+
+* [CLIP: Connecting text and images](https://openai.com/index/clip/), the OpenAI blog post from 2021 that describes CLIP
+* [CLIP](https://github.com/openai/CLIP), the OpenAI GitHub repository for CLIP. This has code examples, and is the the basis for this workshop. At the end, it says:
+  > **See also**
+  > * [OpenCLIP](https://github.com/mlfoundations/open_clip): includes larger and independently trained CLIP models up to ViT-G/14
+  > * [Hugging Face implementation of CLIP](https://huggingface.co/docs/transformers/model_doc/clip): for easier integration with the HF ecosystem
+
+Other Aiven links:
+* [When text meets image: a guide to OpenSearch® for multimodal search](https://aiven.io/developer/opensearch-multimodal-search?utm_source=github&utm_medium=referral&utm_content=workshop-opensearchclip&utm_campaign=workshop) is the ancestor of this workshop, but uses ~25,000 images Unsplash images, at their original resolution.
+* [An app for searching for images matching a text, using CLIP, PostgreSQL® and pgvector](https://github.com/Aiven-Labs/app-multimodal-search-CLIP-PostgreSQL) presents a Python web app using PostgreSQL® and pgvector to do essentially the same thing as this workshop.
