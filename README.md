@@ -18,20 +18,14 @@ We'll need python libraries to operate OpenSearch, run the model and work with c
 Install them by running
 
 ```
-pip install opensearch-py
-pip install python-dotenv
-pip install git+https://github.com/openai/CLIP.git
-pip install ftfy regex tqdm
-pip install Pillow   
-pip install torch
-
+pip install -r requirements.txt
 ```
 
 ### Step 4. Set OpenSearch credentials
 To connect to OpenSearch cluster we'll use the URI of your cluster. 
 
-1. Grab srevice URI from the service page of your Aiven for OpenSearch.
-2. Clone `.env.examples` and rename it to `.env`.
+1. Grab the service URI from the service page of your Aiven for OpenSearch.
+2. Copu `.env.examples` and rename it to `.env`.
 3. Set `SERVICE_URI` in `.env` to your cluster's URI.
 
 
