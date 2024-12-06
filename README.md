@@ -57,12 +57,10 @@ We can use the OpenSearch dashboard to see the contents of the index:
 1. In the service Overview for the Aiven for OpenSearch service, choose the **OpenSearch Dashboards** tab
 2. Copy the **Password** to your clipboard
 3. Open the OpenSearch Dashboards URI, login as user `avnadmin` with the copied password
-4. If asked, choose "Explore on my own"
-5. The Private tenant choice is OK
-6. Using the three-lines menu at the top left, choose **Discover**
-7. Choose "Create index pattern" and then **Use default data source** and "Next step"
-8. It should suggest `photos` as an available index - put `photos` into the **index pattern name** field, and "Next step"
-9. **Create index pattern**
+4. Using the three-lines menu at the top left, choose **Discover**
+5. Choose "Create index pattern" and then **Use default data source** and "Next step"
+6. It should suggest `photos` as an available index - put `photos` into the **index pattern name** field, and "Next step"
+7. **Create index pattern**
 
 The next page should show the fields in the `photos` index, including `image_url` and `embedding`.
 
